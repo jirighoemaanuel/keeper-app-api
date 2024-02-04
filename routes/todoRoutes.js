@@ -6,7 +6,7 @@ const router = express.Router();
 
 dotenv.config();
 
-const db_password = process.env.DB_PASSWORD;
+
 const db = new pg.Pool({
   connectionString: process.env.DBConfigLink,
   ssl: {
